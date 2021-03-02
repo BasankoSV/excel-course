@@ -1,4 +1,4 @@
-import {capitalize} from '@core/utils';
+import {capitalize} from '@core/utils'
 
 export class DomListener {
   constructor($root, listeners = []) {
@@ -19,7 +19,7 @@ export class DomListener {
         )
       }
 
-      this[method] = this.[method].bind(this)
+      this[method] = this[method].bind(this)
       this.$root.on(listener, this[method])
     })
   }
